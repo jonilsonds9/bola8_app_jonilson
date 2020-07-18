@@ -41,15 +41,13 @@ class _BallPageState extends State<BallPage> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Expanded(
-            child: FlatButton(
-                onPressed: () {
-                  randomBall();
-                },
-                child: Image.asset(
-                  'images/ball$ballNumber.png',
-                )
-            ),
+          FlatButton(
+              onPressed: () {
+                randomBall();
+              },
+              child: Image.asset(
+                'images/ball$ballNumber.png',
+              )
           ),
           Text(
             '$textBallNumber',
